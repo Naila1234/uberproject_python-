@@ -67,3 +67,29 @@ execute 'python-pip plugin install Flask-SSLify==0.1.4' do
 end
 
 ########Requiremnets to run the test ###################
+execute 'python pytest requirement' do
+  command 'pip install pytest==2.5.2'
+end
+
+execute 'python pytest-conv' do
+  command 'pip install pytest-cov==1.6'
+end
+
+execute 'Http fixture betamax' do
+  command 'pip install betamax==0.4.0'
+end
+execute 'lint or die flak8'do
+  command 'pip install flake8==2.1.0'
+end
+
+execute 'pep8' do
+  command 'pip install pep8==1.5.6'
+end
+
+execute 'pyflakes' do
+  command 'pip install pyflakes==0.8.1'
+end
+
+execute 'coverall' do
+  command 'pip install coveralls==0.4.2'
+end

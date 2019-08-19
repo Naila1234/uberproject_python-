@@ -72,4 +72,15 @@ describe pip('Flask-SSLify') do
   it { should be_installed }
   its('version') { should eq '0.1.4'}
 end
-  end 
+
+####################Pytest Requiremnets#####################
+describe pip(' pytest') do
+  it { should be_installed }
+  its('version') { should eq '2.5.2'}
+end
+
+describe pip('pytest-cov') do
+  it { should be_installed }
+  its('version') { should eq '1.6'}
+end
+  end

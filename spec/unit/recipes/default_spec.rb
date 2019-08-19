@@ -67,5 +67,33 @@ end
 it 'should install Flask-SSLify==0.1.4 'do
   expect(chef_run).to run_execute "pip install Flask-SSLify==0.1.4"
 end
+########################
+it 'should install pytest==2.5.2'do
+  expect(chef_run).to run_execute "pip install pytest==2.5.2"
+end
+
+it 'should install pytest-cov==1.6'do
+  expect(chef_run).to run_execute "pip install pytest-cov==1.6"
+end
+
+it 'should install betamax==0.4.0'do
+  expect(chef_run).to run_execute "pip install betamax==0.4.0"
+end
+
+it 'should install flake8==2.1.0'do
+  expect(chef_run).to run_execute "pip install flake8==2.1.0"
+end
+
+it 'should install pep8'do
+  expect(chef_run).to run_execute "pip install pep8==1.5.6"
+end
+
+it 'should install pyflakes'do
+  expect(chef_run).to run_execute "pip install pyflakes==0.8.1"
+end
+
+it 'should install coveralls'do
+  expect(chef_run).to run_execute "pip install coveralls==0.4.2"
+end
   end
 end
